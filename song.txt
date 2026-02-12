@@ -6,6 +6,6 @@ Verse-2.txt
 
 Chorus-2.txt
 
-[Verse 3] Und wenn ich dann oben bin Und wir uns endlich berühren Werden wir zu Sternenstaub Und verwehen im Wind Über dem Meer Das wir hinter uns gelassen haben
+Verse-3.txt
 
 [Chorus 3] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
