@@ -4,8 +4,8 @@ Chorus-1.txt
 
 Verse-2.txt
 
-Chorus-2.txt
+Chorus-1.txt
 
 Verse-3.txt
 
-Chorus-3.txt
+Chorus-1.txt
