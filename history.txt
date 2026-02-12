@@ -1,0 +1,259 @@
+commit e43dd4b012603fc9172be31ba6fd1f99f7c58e8b
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 23:16:35 2026 +0000
+
+    Removed duplicate chorus files and updated song.txt
+
+diff --git a/Chorus-2.txt b/Chorus-2.txt
+deleted file mode 100644
+index 5cb586b..0000000
+--- a/Chorus-2.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-[Chorus 2] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+\ No newline at end of file
+diff --git a/Chorus-3.txt b/Chorus-3.txt
+deleted file mode 100644
+index 7fd2a73..0000000
+--- a/Chorus-3.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-[Chorus 3] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+\ No newline at end of file
+diff --git a/song.txt b/song.txt
+index 1a34bc0..0ef4ecc 100644
+--- a/song.txt
++++ b/song.txt
+@@ -4,8 +4,8 @@ Chorus-1.txt
+ 
+ Verse-2.txt
+ 
+-Chorus-2.txt
++Chorus-1.txt
+ 
+ Verse-3.txt
+ 
+-Chorus-3.txt
++Chorus-1.txt
+
+commit 5225cadbf68aed64b991e1b0ba1d7c2c9cbf830d
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 23:09:19 2026 +0000
+
+    Revert "removed half line from chorus 1"
+    
+    This reverts commit b2c7f63f05bc6f8156e8e4e449023a890e983a3a.
+
+diff --git a/Chorus-1.txt b/Chorus-1.txt
+index bc9ddb8..9ff7262 100644
+--- a/Chorus-1.txt
++++ b/Chorus-1.txt
+@@ -1 +1 @@
+-[Chorus 1] Stella Maris Stella Maris Weit über 
++[Chorus 1] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+
+commit b2c7f63f05bc6f8156e8e4e449023a890e983a3a
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 23:01:40 2026 +0000
+
+    removed half line from chorus 1
+
+diff --git a/Chorus-1.txt b/Chorus-1.txt
+index 9ff7262..bc9ddb8 100644
+--- a/Chorus-1.txt
++++ b/Chorus-1.txt
+@@ -1 +1 @@
+-[Chorus 1] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
++[Chorus 1] Stella Maris Stella Maris Weit über 
+
+commit e68fe56f3fa8bd74f3ec796703df04fd5cec869d
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 22:57:48 2026 +0000
+
+    moved chorus 3 to separate file
+
+diff --git a/Chorus-3.txt b/Chorus-3.txt
+new file mode 100644
+index 0000000..7fd2a73
+--- /dev/null
++++ b/Chorus-3.txt
+@@ -0,0 +1 @@
++[Chorus 3] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+\ No newline at end of file
+diff --git a/song.txt b/song.txt
+index 39856f2..1a34bc0 100644
+--- a/song.txt
++++ b/song.txt
+@@ -8,4 +8,4 @@ Chorus-2.txt
+ 
+ Verse-3.txt
+ 
+-[Chorus 3] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
++Chorus-3.txt
+
+commit 1e1a9486a4b8ac93a5fed254de974b5d51d0b61d
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 22:55:54 2026 +0000
+
+    moved verse 3 to separate file
+
+diff --git a/song.txt b/song.txt
+index 3041d40..39856f2 100644
+--- a/song.txt
++++ b/song.txt
+@@ -6,6 +6,6 @@ Verse-2.txt
+ 
+ Chorus-2.txt
+ 
+-[Verse 3] Und wenn ich dann oben bin Und wir uns endlich berühren Werden wir zu Sternenstaub Und verwehen im Wind Über dem Meer Das wir hinter uns gelassen haben
++Verse-3.txt
+ 
+ [Chorus 3] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+diff --git a/verse-3.txt b/verse-3.txt
+new file mode 100644
+index 0000000..cdd09c7
+--- /dev/null
++++ b/verse-3.txt
+@@ -0,0 +1 @@
++[Verse 3] Und wenn ich dann oben bin Und wir uns endlich berühren Werden wir zu Sternenstaub Und verwehen im Wind Über dem Meer Das wir hinter uns gelassen haben
+\ No newline at end of file
+
+commit 075643da86eda9bd2c879ecee7741bac1b666021
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 22:53:20 2026 +0000
+
+    moved chorus 2 to separate file
+
+diff --git a/Chorus-2.txt b/Chorus-2.txt
+new file mode 100644
+index 0000000..5cb586b
+--- /dev/null
++++ b/Chorus-2.txt
+@@ -0,0 +1 @@
++[Chorus 2] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+\ No newline at end of file
+diff --git a/song.txt b/song.txt
+index 6147a73..3041d40 100644
+--- a/song.txt
++++ b/song.txt
+@@ -4,7 +4,7 @@ Chorus-1.txt
+ 
+ Verse-2.txt
+ 
+-[Chorus 2] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
++Chorus-2.txt
+ 
+ [Verse 3] Und wenn ich dann oben bin Und wir uns endlich berühren Werden wir zu Sternenstaub Und verwehen im Wind Über dem Meer Das wir hinter uns gelassen haben
+ 
+
+commit 6a9582fdfe3092213313c0af14091d5e0d20af1c
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 22:49:47 2026 +0000
+
+    moved verse 2 to separate file
+
+diff --git a/song.txt b/song.txt
+index ea66bc2..6147a73 100644
+--- a/song.txt
++++ b/song.txt
+@@ -2,7 +2,7 @@ Verse-1.txt
+ 
+ Chorus-1.txt 
+ 
+-[Verse 2] Ich sehe dich nicht Ich spüre dich nur Wie du über das Wasser gleitest Und eine leuchtende Spur hinterlässt Die mir den Weg zeigt Zu dir hinauf Aus der Tiefe In der ich gefangen bin
++Verse-2.txt
+ 
+ [Chorus 2] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+ 
+diff --git a/verse-2.txt b/verse-2.txt
+new file mode 100644
+index 0000000..bb4f4dc
+--- /dev/null
++++ b/verse-2.txt
+@@ -0,0 +1 @@
++[Verse 2] Ich sehe dich nicht Ich spüre dich nur Wie du über das Wasser gleitest Und eine leuchtende Spur hinterlässt Die mir den Weg zeigt Zu dir hinauf Aus der Tiefe In der ich gefangen bin
+\ No newline at end of file
+
+commit f0b27ebd0fd2a769c8271023336c7e555ccb1c3b
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 22:43:40 2026 +0000
+
+    moved Chorus 1 to separate file
+
+diff --git a/Chorus-1.txt b/Chorus-1.txt
+new file mode 100644
+index 0000000..9ff7262
+--- /dev/null
++++ b/Chorus-1.txt
+@@ -0,0 +1 @@
++[Chorus 1] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+diff --git a/song.txt b/song.txt
+index b1e2156..ea66bc2 100644
+--- a/song.txt
++++ b/song.txt
+@@ -1,6 +1,6 @@
+ Verse-1.txt
+ 
+-[Chorus 1] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
++Chorus-1.txt 
+ 
+ [Verse 2] Ich sehe dich nicht Ich spüre dich nur Wie du über das Wasser gleitest Und eine leuchtende Spur hinterlässt Die mir den Weg zeigt Zu dir hinauf Aus der Tiefe In der ich gefangen bin
+ 
+
+commit 8ba77ca99ff8ab665554d8f25f937567c79cbcae
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 22:35:57 2026 +0000
+
+    moved verse 1 to separate file
+
+diff --git a/song.txt b/song.txt
+index c48d27f..b1e2156 100644
+--- a/song.txt
++++ b/song.txt
+@@ -1,4 +1,4 @@
+-[Verse 1] Ich warte auf dich In meinem Traum Ganz tief im Meer Dort ist ein Raum In dem alles still ist In dem es kein Licht gibt Außer dem Glitzern Das von dir ausgeht
++Verse-1.txt
+ 
+ [Chorus 1] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+ 
+diff --git a/verse-1.txt b/verse-1.txt
+new file mode 100644
+index 0000000..d7616c2
+--- /dev/null
++++ b/verse-1.txt
+@@ -0,0 +1 @@
++[Verse 1] Ich warte auf dich In meinem Traum Ganz tief im Meer Dort ist ein Raum In dem alles still ist In dem es kein Licht gibt Außer dem Glitzern Das von dir ausgeht
+
+commit 224c98fb95f4143ea84d63982fd979f151258803
+Author: MkMan100 <95576058+MkMan100@users.noreply.github.com>
+Date:   Thu Feb 12 22:22:53 2026 +0000
+
+    Initial commit: full lyrics added
+
+diff --git a/song.txt b/song.txt
+new file mode 100644
+index 0000000..c48d27f
+--- /dev/null
++++ b/song.txt
+@@ -0,0 +1,11 @@
++[Verse 1] Ich warte auf dich In meinem Traum Ganz tief im Meer Dort ist ein Raum In dem alles still ist In dem es kein Licht gibt Außer dem Glitzern Das von dir ausgeht
++
++[Chorus 1] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
++
++[Verse 2] Ich sehe dich nicht Ich spüre dich nur Wie du über das Wasser gleitest Und eine leuchtende Spur hinterlässt Die mir den Weg zeigt Zu dir hinauf Aus der Tiefe In der ich gefangen bin
++
++[Chorus 2] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
++
++[Verse 3] Und wenn ich dann oben bin Und wir uns endlich berühren Werden wir zu Sternenstaub Und verwehen im Wind Über dem Meer Das wir hinter uns gelassen haben
++
++[Chorus 3] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
+e43dd4b Removed duplicate chorus files and updated song.txt
+5225cad Revert "removed half line from chorus 1"
+b2c7f63 removed half line from chorus 1
+e68fe56 moved chorus 3 to separate file
+1e1a948 moved verse 3 to separate file
+075643d moved chorus 2 to separate file
+6a9582f moved verse 2 to separate file
+f0b27eb moved Chorus 1 to separate file
+8ba77ca moved verse 1 to separate file
+224c98f Initial commit: full lyrics added
