@@ -2,7 +2,7 @@ Verse-1.txt
 
 Chorus-1.txt 
 
-[Verse 2] Ich sehe dich nicht Ich spüre dich nur Wie du über das Wasser gleitest Und eine leuchtende Spur hinterlässt Die mir den Weg zeigt Zu dir hinauf Aus der Tiefe In der ich gefangen bin
+Verse-2.txt
 
 [Chorus 2] Stella Maris Stella Maris Weit über mir In der kalten Nacht Stella Maris Gib auf mich Acht
 
